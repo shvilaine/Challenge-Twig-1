@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bonjour</title>
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+
+<body>
+    <h1>Musical instruments</h1>
+
+        <h1>Available products</h1>
+    <section>
+        <ul>
+        {% for product in products %}
+        <li>{{ product }}</li>
+        {% endfor %}
+        </ul>
+    <div>
+        {{ dump(product) }}
+    </div>
+    </section>
+</body>
+
+</html>
